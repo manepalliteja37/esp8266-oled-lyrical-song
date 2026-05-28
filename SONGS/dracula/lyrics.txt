@@ -1,0 +1,60 @@
+## 📄 `songs/dracula/lyrics.txt`
+
+```txt
+# DRACULA - Lyric Timing Reference
+# Format: delay_ms | duration_ms | word | effect | text_size
+# ---------------------------------------------------------
+# delay_ms    = wait time BEFORE this word appears (relative to previous word's end)
+# duration_ms = how LONG the word stays on screen
+# word        = exact text to display
+# effect      = NONE, POP, SHAKE, INVERT, GLITCH, ZOOM_IN
+# text_size   = 1 (small), 2 (medium), 3 (large)
+# ---------------------------------------------------------
+
+0     | 300  | The        | NONE       | 2
+0     | 300  | morning    | POP        | 2
+0     | 300  | light      | NONE       | 2
+0     | 300  | is         | NONE       | 2
+0     | 300  | turning    | NONE       | 2
+100   | 500  | BLUE       | INVERT     | 3
+0     | 300  | the        | NONE       | 2
+0     | 300  | feeling    | POP        | 2
+0     | 300  | is         | NONE       | 2
+0     | 800  | BIZARRE    | GLITCH     | 2
+200   | 300  | The        | NONE       | 2
+0     | 300  | night      | POP        | 2
+0     | 300  | is         | NONE       | 2
+0     | 300  | almost     | NONE       | 2
+0     | 500  | over,      | NONE       | 2
+200   | 300  | I          | NONE       | 2
+0     | 300  | still      | POP        | 2
+0     | 300  | don't      | NONE       | 2
+0     | 300  | know       | NONE       | 2
+0     | 200  | where      | NONE       | 2
+0     | 200  | you        | NONE       | 2
+0     | 600  | ARE        | SHAKE      | 3
+200   | 300  | The        | NONE       | 2
+0     | 400  | shadows,   | SHAKE      | 2
+0     | 300  | yeah,      | NONE       | 2
+0     | 300  | they       | NONE       | 2
+0     | 300  | keep       | NONE       | 2
+0     | 300  | me         | NONE       | 2
+0     | 300  | pretty     | POP        | 2
+0     | 300  | like       | NONE       | 2
+0     | 300  | a          | NONE       | 2
+0     | 300  | movie      | NONE       | 2
+0     | 800  | STAR       | INVERT     | 3
+300   | 500  | Daylight   | POP        | 2
+0     | 300  | makes      | NONE       | 2
+0     | 300  | me         | NONE       | 2
+0     | 300  | feel       | NONE       | 2
+0     | 200  | like       | NONE       | 2
+100   | 2500 | DRACULA    | ZOOM_IN    | 3
+
+# 📝 Notes:
+# - Total estimated runtime: ~16.5 seconds + 3s loop pause = ~19.5s per cycle
+# - The code auto-calculates absolute start times in setup()
+# - Change any value here → update src/main.ino to match
+```
+
+---
